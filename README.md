@@ -1,4 +1,4 @@
-# Dash Natural Gas Well Production
+# Interactive dashboard for computer tasks
 
 This is a demo of the Dash interactive Python framework developed by [Plotly](https://plot.ly/).
 
@@ -24,8 +24,8 @@ Clone the git repo, then install the requirements with pip
 
 ```
 
-git clone https://github.com/plotly/dash-sample-apps
-cd dash-sample-apps/apps/dash-oil-and-gas
+git clone https://github.com/77experience/Interactive-dashboard
+cd Interactive-dashboard
 pip install -r requirements.txt
 
 ```
@@ -40,21 +40,12 @@ python app.py
 
 ## About the app
 
-This Dash app displays oil production in western New York. There are filters at the top of the app to update the graphs below. By selecting or hovering over data in one plot will update the other plots ('cross-filtering').
+This web app provide an interactive dashboard that visualize the computer tasks data from the tasks.xls dataset . Traces related to task progression and errors are ploted all together in the same graph as group so that we can obtain insights about the different variation of error and progression plots. Note also that we can display only the progression trace by setting errors to None in the filters.
+
+On the graph we can select devices using the drag mode and also zoom on the graph. When selecting devices on the graph, notice the change in slider as well in the device counter above the graph. All this interactivity comes from the use of the so called "callbacks" in plotly.
 
 ## Built With
 
 - [Dash](https://dash.plot.ly/) - Main server and interactive components
 - [Plotly Python](https://plot.ly/python/) - Used to create the interactive plots
 
-## Screenshots
-
-The following are screenshots for the app in this repo:
-
-![animated1](screenshots/animated1.gif)
-
-![screenshot](screenshots/screenshot1.png)
-
-![screenshot](screenshots/screenshot2.png)
-
-![screenshot](screenshots/screenshot3.png)
